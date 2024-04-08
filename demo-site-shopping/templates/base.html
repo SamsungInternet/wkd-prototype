@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>{{ section.title }} - ACME Demo Site</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="/style.css" rel="stylesheet">
+</head>
+
+<body>
+	<nav>
+		<ul>
+			<li><a href="/">home</a></li>
+			<li><a href="/products/">products</a></li>
+			<li><a href="/contact/">contact</a></li>
+			<li><a href="/sign-in/">sign-in</a></li>
+		</ul>
+	</nav><header>
+		<h1>{{ section.title }}</h1>
+	</header>
+	<main>
+		{% block content %} {% endblock %}
+	</main>
+	<footer>
+		<ul>
+			<li><a href="/about/">about</a></li>
+			<li><a href="/accessibility/">accessibility</a></li>
+			<li><a href="/help/">help</a></li>
+		</ul>
+	</footer>
+</body>
+
+</html>

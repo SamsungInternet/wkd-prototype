@@ -1,0 +1,27 @@
+:root { color-scheme: dark light; }
+
+body {
+	margin: 1em;
+	width: 18em;
+}
+
+h1 {
+	font-size: 1.2em;
+	margin-top: 0;
+}
+
+fieldset { border: 1px solid; }
+
+legend { font-weight: bold; }
+
+fieldset > p { margin-block: 0.25em 0.5em; }
+
+.grouping {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5em;
+}
+
+button {
+	text-align: center;  /* Firefox */
+}

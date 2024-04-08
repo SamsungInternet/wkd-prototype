@@ -1,0 +1,94 @@
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	color-scheme: dark light;
+}
+
+html {
+	font-family: sans-serif;
+	font-size: 1.5;
+	line-height: 1.5;
+	--border-colour: black;
+}
+
+body {
+	max-width: 40em;
+	margin: auto;
+}
+
+body>*+* {
+	margin-top: 1em;
+}
+
+nav,
+footer {
+	padding: 0.5em 0;
+}
+
+nav {
+	border-block-end: 1px solid var(--border-colour);
+}
+
+footer {
+	border-block-start: 1px solid var(--border-colour);
+}
+
+nav ul,
+footer ul {
+	list-style: none;
+	display: flex;
+	padding: 0;
+	gap: 1em;
+}
+
+form {
+	display: grid;
+	grid-template-columns: max-content max-content;
+	gap: 0.5em;
+}
+
+label {
+	font-weight: bold;
+}
+
+label::after {
+	content: ":";
+}
+
+input {
+	border: 1px solid var(--border-colour);
+}
+
+@media (prefers-color-scheme: dark) {
+	html {
+		--border-colour: white;
+	}
+}
+
+.products {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 1em;
+}
+
+.products > div {
+	padding: 0.75em;
+	width: 6em;
+	height: 7em;
+	background-color: green;
+	font-weight: bold;
+	justify-self: center;
+}
+
+.products > div > a,
+.products > div > a:visited {
+	color: white;
+}
+
+textarea {
+	width: 25em;
+	height: 6em;
+}
